@@ -1,0 +1,73 @@
+/* src/components/Questionnaire.css */
+.questionnaire-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f5f7, #e0e0e0);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.questionnaire-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: slideIn 0.5s ease-in-out;
+  max-width: 500px;
+  width: 100%;
+}
+
+.questionnaire-question {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.questionnaire-input {
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.questionnaire-input:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,80 @@
+/* src/components/Login.css */
+@import './animations.css';
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f7;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-container h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.login-input {
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.login-input:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.login-button, .register-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-button {
+  background-color: #007aff;
+}
+
+.login-button:hover {
+  background-color: #005bb5;
+}
+
+.register-button {
+  background-color: #34c759;
+}
+
+.register-button:hover {
+  background-color: #28a745;
+}
